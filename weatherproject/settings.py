@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zldj5ssx(bw5%pvjn)&tu+q7@+_^d*aa^%pb%($d6sm7e#q4)&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'weather'
+    'weather',
+    
 ]
 
 MIDDLEWARE = [
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'weatherproject.wsgi.application'
+WSGI_APPLICATION = 'weatherproject.wsgi.app'
 
 
 # Database
